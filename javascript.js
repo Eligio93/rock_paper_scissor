@@ -1,6 +1,4 @@
 function getComputerChoice(){
 
 }
-let pcrock= "Rock";
-let pcpaper="Paper";
-let pcscissor= "Scissor";
+let pcchoice= ["Rock","Paper","Scissor"];
