@@ -1,6 +1,6 @@
 let pcChoice= ["rock","paper","scissor"];
-let pcSelection= getComputerChoice(pcChoice);
-let playerSelection=prompt().toLowerCase();
+let pcSelection= "";//getComputerChoice(pcChoice);
+let playerSelection="";//prompt().toLowerCase();
 let playerScore=0;
 let pcScore=0;
 
@@ -36,7 +36,22 @@ function round(playerSelection,pcSelection){
 
 }
 
-console.log(pcSelection);
-console.log(playerSelection);
-console.log(round(playerSelection,pcSelection));
+
+for(let cont=0;cont<5;cont++){
+    playerSelection=prompt().toLowerCase(); 
+    console.log(playerSelection);
+    pcSelection=getComputerChoice(pcChoice);
+    console.log(pcSelection);
+    round(playerSelection,pcSelection);
+    console.log(round(playerSelection,pcSelection));
+    
+    
+}
 console.log(playerScore,pcScore);
+
+
+
+
+
+
+
