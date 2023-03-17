@@ -1,15 +1,16 @@
 let pcChoice= ["rock","paper","scissor"];
-let pcSelection= "";//getComputerChoice(pcChoice);
-let playerSelection="";//prompt().toLowerCase();
+let pcSelection= "";
+let playerSelection="";
 let playerScore=0;
 let pcScore=0;
 let finalMessage="";
 
+//The function below take a random word from the array
 function getComputerChoice(pcChoice){
     pcChoice=pcChoice[Math.floor(Math.random()*pcChoice.length)];
     return pcChoice;
 }
-
+//The function below play one round of the game
 function round(playerSelection,pcSelection){
     if(playerSelection===pcSelection){
         return "Draw! Your weapons are the same";
@@ -36,10 +37,10 @@ function round(playerSelection,pcSelection){
 
 
 }
-
+//the function below repeat the round for 5 times and declare the winner, the loser or if the game ends in draw
 function game(){
 for(let cont=0;cont<5;cont++){
-    playerSelection=prompt().toLowerCase(); 
+    playerSelection=prompt("Type rock, paper or scissor").toLowerCase(); 
     console.log(playerSelection);
     pcSelection=getComputerChoice(pcChoice);
     console.log(pcSelection);
