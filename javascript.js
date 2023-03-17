@@ -42,7 +42,7 @@ for(let cont=0;cont<5;cont++){
     console.log(playerSelection);
     pcSelection=getComputerChoice(pcChoice);
     console.log(pcSelection);
-    round(playerSelection,pcSelection);
+    //round(playerSelection,pcSelection);
     console.log(round(playerSelection,pcSelection));
     
     
