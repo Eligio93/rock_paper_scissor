@@ -3,6 +3,7 @@ let pcSelection= "";//getComputerChoice(pcChoice);
 let playerSelection="";//prompt().toLowerCase();
 let playerScore=0;
 let pcScore=0;
+let finalMessage="";
 
 function getComputerChoice(pcChoice){
     pcChoice=pcChoice[Math.floor(Math.random()*pcChoice.length)];
@@ -36,7 +37,7 @@ function round(playerSelection,pcSelection){
 
 }
 
-
+function game(){
 for(let cont=0;cont<5;cont++){
     playerSelection=prompt().toLowerCase(); 
     console.log(playerSelection);
@@ -44,10 +45,22 @@ for(let cont=0;cont<5;cont++){
     console.log(pcSelection);
     //round(playerSelection,pcSelection);
     console.log(round(playerSelection,pcSelection));
-    
-    
+    console.log(playerScore,pcScore);
 }
-console.log(playerScore,pcScore);
+if(playerScore>pcScore){
+    finalMessage="You have won the game";
+    return finalMessage;
+}else if(playerScore<pcScore){
+    finalMessage="You have lost the game against the computer";
+    return finalMessage;
+}else{
+    finalMessage="The game is Draw";
+    return finalMessage;
+}
+}
+
+console.log(game());
+
 
 
 
