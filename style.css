@@ -1,0 +1,51 @@
+
+body{
+    text-align: center;
+    box-sizing: border-box;
+   
+}
+.container{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.box{
+    width:100px;
+    height:100px;
+}
+.main{
+    display:flex;
+}
+.sidebar{
+    width:30%;
+   
+}
+.choice{
+    width:150px;
+    height:50px;
+
+}
+.buttons{
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+    align-items: center;
+    
+    
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    width:70%;
+}
+.players, .weapons, .results{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    
+}
+/*#message{
+    width:300px;
+    text-align: center;
+}*/

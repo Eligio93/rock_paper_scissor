@@ -1,13 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="javascript.js"></script>
-    <title>Document</title>
+    <script src="javascript.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Rock, Paper, Scissors</title>
 </head>
+
 <body>
-    
+
+    <h1>Rock, Paper Scissors</h1>
+    <div class="main">
+        <div class="sidebar">
+            <h2>Choose your Weapon</h2>
+            <div class="buttons">
+                <button class="choice" id="rock">Rock</button>
+                <button class="choice" id="paper">Paper</button>
+                <button class="choice" id="scissors">Scissors</button>
+            </div>
+        </div>
+
+
+        <div class="content">
+            <div class="players">
+                <h2>Player</h2>
+                <h2>Computer</h2>
+            </div>
+            <div class="weapons">
+                <div class="box">
+                    <div id="playerWeapon"></div>
+                </div>
+                <p class="separate">-</p>
+                <div class="box">
+                    <div id="pcWeapon"></div>
+                </div>
+            </div>
+            <div id="message"></div>
+            <h2>Score</h2>
+            <div class="results">
+                <div class="box">
+                    <div id="playerResult"></div>
+                </div>
+                <p class="separate">-</p>
+                <div class="box">
+                    <div id="pcResult"></div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </div>
 </body>
+
 </html>
